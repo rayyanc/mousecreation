@@ -38,3 +38,4 @@ Related symbols can also be grouped when being used in the same object.
 ![image](https://github.com/rayyanc/csiiisp/assets/111067262/f0652091-f582-4dc5-8c00-59c249d2eaa3)
 ![image](https://github.com/rayyanc/csiiisp/assets/111067262/5c225128-9fd5-400b-8e76-e15a429cc1a4)
 
+Grouping means that objects can be grouped together to all move as one piece.
