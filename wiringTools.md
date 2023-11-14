@@ -24,3 +24,17 @@ No Connect Flag means don't connect the wires.
 
 ![Wiring-Tools-20200807064312](https://github.com/rayyanc/csiiisp/assets/111067064/05923a88-36c9-43b7-9788-a640201a3753)
 
+A voltage probe is used to reduce the voltage to a certain amount that is needed.
+
+![image](https://github.com/rayyanc/csiiisp/assets/111067262/db550536-df11-4cb6-a638-35d031cf8b2b)
+![image](https://github.com/rayyanc/csiiisp/assets/111067262/b8290637-bb19-4758-bf53-30288ffef3a1)
+
+Pins can be used to label new symbols so that they can be wired.
+
+![image](https://github.com/rayyanc/csiiisp/assets/111067262/c0dbda3e-ba0c-4abf-a1a3-79731066ea2e)
+
+Related symbols can also be grouped when being used in the same object.
+
+![image](https://github.com/rayyanc/csiiisp/assets/111067262/f0652091-f582-4dc5-8c00-59c249d2eaa3)
+![image](https://github.com/rayyanc/csiiisp/assets/111067262/5c225128-9fd5-400b-8e76-e15a429cc1a4)
+
