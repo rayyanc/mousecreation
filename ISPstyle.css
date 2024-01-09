@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+h1, h2, p, ul, ol {
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    padding-right: 1500px;
+}
+
+a {
+    color: blue;
+}
+
+footer {
+    position: fixed;
+    ;
+}
