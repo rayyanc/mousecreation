@@ -10,3 +10,16 @@ Our vision is to learn about circutry and create a mouse using our knowledge. We
 | Arnav L       | arnav-logan   | UI/UX           | [Arnav's digital portfolio](https://codermerlin.academy/users/arnav-logan/Digital%20Portfolio/index.html "Arnav's Homepage") |
 | Tiffany J     | xiberxia      | QA              | [Tiffany's digital portfolio](https://codermerlin.academy/users/tiffany-jiang/Digital%20Portfolio/index.html "Tiffany's Homepage") |
 | Daniel B      | xurideveloper | UI/UX           | [Danny's digital portfolio](https://codermerlin.academy/users/daniel-brinn/Digital%20Portfolio/index.html "Danny's Homepage") |
+
+
+# parts
+- scroll wheel
+- IR sensor
+- polymer body
+- Red LED
+- Custom DIY circuit board
+- Microcontroller
+- Buttons
+- Wiring
+- USB Cable
+- Feet
