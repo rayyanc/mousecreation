@@ -7,9 +7,14 @@ h1, h2, p, ul, ol {
     color: white;
 }
 
+.alignedText {
+    position: fixed;
+    bottom: 20%;
+}
+
 p {
     font-size: 20px;
-    padding-right: 1500px;
+    padding-right: 80%;
 }
 
 a {
@@ -18,5 +23,11 @@ a {
 
 footer {
     position: fixed;
-    ;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
