@@ -7,3 +7,4 @@ Usually, the lamp on the mice has four unique power states, to save energy.
 1100: fallback active condition while not moving, illumination appears dull.
 110: standby
 12: sleep state
+ 
