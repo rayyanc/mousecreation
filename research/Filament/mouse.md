@@ -3,7 +3,7 @@
 https://www.prusa3d.com/category/pla/ 
 https://www.prusa3d.com/product/black-easyabs-filament-1kg/
 
-We will be using 'ABS' for our filament as its more durable then 'PLA'
+We will be using 'ABS' for our filament for the mouse & printer, as its more durable then 'PLA' and will be our best option out of the rest.
 
 Attributes 
 
