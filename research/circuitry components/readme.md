@@ -1,1 +1,14 @@
-placeholder
+All circuitry components: 
+ID|Name|Designator|Footprint|Quantity
+|--|----------|----------------------------|-----------------|-------------|
+1|1u|C1,C12,C13,C14|CASE-A_3216|4
+2|0.1u|C2,C3,C4,C6,C10,C11|C0603|6
+3|3-794630-6|CN2|CONN-TH_6P-P3.00_3-794630-6|1
+4|LED-0603_R|LED1,LED2|LED0603_RED|2
+5|1k|R1,R2,R3,R4,R5|R0603|5
+6|	EVQ22705R	SW1,SW2,SW3|	KEY-TH_L6.0-W6.0-P5.00-LS5.5	|3
+7	|HDR-1X5.	|U1|	CONN-TH_HDR-1X5|	1
+8	|MAX232EIDR	|U2|	SOIC-16_L9.9-W3.9-P1.27-LS6.0-BL	|1
+9	|SN74LS273N	|U3	|DIP20	|1
+10|	XC6204B282MR	|U6|	SOT-25_L3.0-W1.6-P0.95-LS2.8-BR|	1
+11|	49S|	X1|	CRYSTAL-TH_L10.8-W4.5-P4.88|	1
