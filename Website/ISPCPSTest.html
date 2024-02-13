@@ -4,15 +4,29 @@
     <meta charset="utf-8">
     <title>CPS Test</title>
     <link rel="stylesheet" href="./ISPstyle.css">
+    <style>
+      .container {
+	  position: relative;
+	  width: 100%;
+	  padding-top: 3%;
+	  text-align: center;
+      }
+
+      .CPSiframe {
+	  height: 700px;
+	  width: 80%;
+      }
+
+      .title {
+	  font-size: 50px;
+      }
+    </style>
   </head>
   <body>
-    <h2>Clicks Per Second Test</h2>
-    <script>
-      var x = 0;
-    
-    </script>
 
-    <button type="button" onclick="x += 1; document.getElementById('demo').innerHTML = x;"> Click me to display total number of clicks.</button>
-    <p id="demo"></p>
+    <div class="container">
+      <h2 class="title">Clicks Per Second Test</h2>
+      <iframe class="CPSiframe" src="https://cpstest.org/" title="test"></iframe>
+    </div>
   </body>
 </html> 
