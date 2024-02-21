@@ -20,6 +20,11 @@
       .title {
 	  font-size: 50px;
       }
+
+      .button {	  
+	  width: 60%;
+	  height: 400px;
+      }
     </style>
   </head>
   <body>
@@ -28,5 +33,41 @@
       <h2 class="title">Clicks Per Second Test</h2>
       <iframe class="CPSiframe" src="https://cpstest.org/" title="test"></iframe>
     </div>
+    <br>
+    <br>
+    <br>
+    <script>
+      var seconds = 0;
+      var clicks = 0;
+      let timerInterval;
+      
+      function startTest(){
+	  setTimeout(clear, 5000);
+	  timerInterval = setInterval(updateTimer, 10);
+	  document.getElementById('startButton').style.display = 'none';
+	  document.getElementById('clickButton').removeAttribute('hidden');
+      }
+
+      function clear(){
+	  clearInterval(timerInterval);
+	  document.getElementById('finalCPS').innerHTML = 'CPS: ' + (clicks / (seconds / 100));
+      }
+
+      function updateTimer(){
+	  seconds += 1;
+	  document.getElementById('timeDisplay').innerHTML = 'Time: ' + (seconds / 100);
+      }
+    </script>
+    
+    <button class="button" id="startButton" type="button"
+	    onclick="startTest()">
+      Click to start</button>
+    
+    <button hidden class="button" id="clickButton" type="button"
+	    onclick="clicks += 1;document.getElementById('clickButton').innerHTML=clicks">
+      Click</button>
+    
+    <p id="timeDisplay"></p>
+    <p id="finalCPS"></p>
   </body>
 </html> 
