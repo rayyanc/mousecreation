@@ -4,15 +4,73 @@
     <meta charset="utf-8">
     <title>CPS Test</title>
     <link rel="stylesheet" href="./ISPstyle.css">
+    <style>
+      .container {
+	  position: relative;
+	  width: 100%;
+	  padding-top: 3%;
+	  text-align: center;
+      }
+
+      .CPSiframe {
+	  height: 700px;
+	  width: 80%;
+      }
+
+      .title {
+	  font-size: 50px;
+      }
+
+      .button {	  
+	  width: 60%;
+	  height: 400px;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+      }
+    </style>
   </head>
   <body>
-    <h2>Clicks Per Second Test</h2>
-    <script>
-      var x = 0;
-    
-    </script>
 
-    <button type="button" onclick="x += 1; document.getElementById('demo').innerHTML = x;"> Click me to display total number of clicks.</button>
-    <p id="demo"></p>
+    <div class="container">
+      <h2 class="title">Clicks Per Second Test</h2>
+      <iframe class="CPSiframe" src="https://cpstest.org/" title="test"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+      var seconds = 0;
+      var clicks = 0;
+      let timerInterval;
+      
+      function startTest(){
+	  setTimeout(clear, 5000);
+	  timerInterval = setInterval(updateTimer, 10);
+	  document.getElementById('startButton').style.display = 'none';
+	  document.getElementById('clickButton').removeAttribute('hidden');
+      }
+
+      function clear(){
+	  clearInterval(timerInterval);
+	  document.getElementById('finalCPS').innerHTML = 'CPS: ' + (clicks / (seconds / 100));
+      }
+
+      function updateTimer(){
+	  seconds += 1;
+	  document.getElementById('timeDisplay').innerHTML = 'Time: ' + (seconds / 100);
+      }
+    </script>
+    
+    <button class="button" id="startButton" type="button"
+	    onclick="startTest()">
+      Click to start</button>
+    
+    <button hidden class="button" id="clickButton" type="button"
+	    onclick="clicks += 1;document.getElementById('clickButton').innerHTML=clicks">
+      Click</button>
+    
+    <p id="timeDisplay"></p>
+    <p id="finalCPS"></p>
   </body>
 </html> 
