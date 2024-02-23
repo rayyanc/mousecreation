@@ -1,0 +1,1 @@
+Guys i think it might be a red LED

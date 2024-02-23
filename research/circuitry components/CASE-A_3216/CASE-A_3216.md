@@ -1,0 +1,3 @@
+1u CASE-A_3216	is a tantalum capacitator, which is a type of electrolytic capacitator. Here is an Amazon link: https://www.amazon.com/Pcs-Tantalum-Capacitor-%C2%B120-35V-CASE-A_3216/dp/B09KQG6CBN. [Possibly the right one, still need to check with Volkan].
+Electrolytic capacitators are polarized, and must have a higher charge on the anode side than the cathode; a reverse voltage may destroy the capacitator. A_3216 has a higher capacitance per volume (able to hold more electricity) than other electrolytic capacitators, while having lower weight.
+The u1 represents the size of the capacitator, probably.
