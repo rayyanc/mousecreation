@@ -61,6 +61,18 @@
 	  position: relative;
 	  bottom: 20px;
       }
+
+	  .imageBorderL {
+		border-radius: 15px 30px;
+	  }
+
+	  .imageBorderR {
+		border-radius: 30px 15px;
+	  }
+
+	  .imageBorderC {
+		border-radius: 25px;
+	  }
     </style>
   </head>
 
@@ -73,10 +85,10 @@
     <div class="centerText">      
       <h1>Independent Study Project: Creating a Mouse</h1>
       <div class="imagesRight">
-	<img src="https://m.media-amazon.com/images/I/61hzuoXwjqL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="bottom:60%;right:100%;">
+	<img class="imageBorderR" src="https://m.media-amazon.com/images/I/61hzuoXwjqL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="bottom:60%;right:100%;">
       </div>
       <div class="imagesLeft">
-	<img src="https://m.media-amazon.com/images/I/61XWAkgnTdL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="bottom:60%;right:100%;">
+	<img class="imageBorderL" src="https://m.media-amazon.com/images/I/61XWAkgnTdL.__AC_SX300_SY300_QL70_FMwebp_.jpg" style="bottom:60%;right:100%;">
       </div>
 
       <div class="centerBox">
@@ -85,18 +97,18 @@
 	<br>
 	<h2 style="position:relative;bottom:20%;">Necessary Processes</h2>
 	<p>We will need to first research what type of mouse to make (optical or laser, wired or wireless) and then start creating the circuitry for the mouse with the tools EasyEDA. Additionally, we should create a model of the mouse using Solid Edge and Blender to plan what type of design we are going to use.</p>
-	<a href="https://easyeda.com/" target="_blank"><img class="imagesCenter" src="https://easyeda.com/images/easyeda-thumbnail.png?id=d5ed1fe5930602975df1"></a>
-	<a href="https://solidedge.siemens.com/en/" target="_blank"><img class="imagesCenter" src="https://www.uli-ludwig.de/mediafiles/Bilder/solidedge_logo.jpg" style="max-width:300px;"></a>
+	<a href="https://easyeda.com/" target="_blank"><img class="imagesCenter imageBorderC" src="https://easyeda.com/images/easyeda-thumbnail.png?id=d5ed1fe5930602975df1"></a>
+	<a href="https://solidedge.siemens.com/en/" target="_blank"><img class="imagesCenter imageBorderC" src="https://www.uli-ludwig.de/mediafiles/Bilder/solidedge_logo.jpg" style="max-width:300px;"></a>
 	<a href="https://www.blender.org/" target="_blank"><img class="imagesCenter" src="https://www.icons101.com/icon_png/size_512/id_80863/blender_icon_white.png"></a>
 	<br>
 	<h2>Development: Mouse PCB</h2>
 	<p>We will need to create a PCB for the mouse using EasyEDA as part of the development process. Since we have little to none experience with EasyEDA, we will have to first learn how to use it before starting work on the mouse PCB. We can use resources such as the <a href="https://docs.easyeda.com/en/FAQ/Editor/index.html" target="_blank">EasyEDA tutorial</a> to learn.</p>
-	<img class="imagesCenter" src="https://image.easyeda.com/components/3c9b6090d3334af29dd4f7f794b1abd9.png" style="max-width:500px;">
+	<img class="imagesCenter imageBorderC" src="https://image.easyeda.com/components/3c9b6090d3334af29dd4f7f794b1abd9.png" style="max-width:500px;">
 	<p class="imageCaption">Example mouse PCB</p>
 	<h2>Development: Mouse Model</h2>
 	<p>We will need to first create a model of our mouse to plan what design we are going to be using. We will use Blender and Solid Edge to create our model and then print it out to see how it is. Additionally, we will need to make sure that the model is appropriately sized to fit the PCB that we are designing separately.</p>
-	<img class="imagesCenter" src="https://github.com/rayyanc/csiiisp/blob/dev/Website/mouse_model_bottom_image.PNG?raw=true" style="max-width:300px;">
-	<img class="imagesCenter" src="https://github.com/rayyanc/csiiisp/blob/dev/Website/mouse_model_top_image.PNG?raw=true" style="max-width:320px;">
+	<img class="imagesCenter imageBorderL" src="https://github.com/rayyanc/csiiisp/blob/dev/Website/mouse_model_bottom_image.PNG?raw=true" style="max-width:300px;">
+	<img class="imagesCenter imageBorderR" src="https://github.com/rayyanc/csiiisp/blob/dev/Website/mouse_model_top_image.PNG?raw=true" style="max-width:320px;">
 	<p class="imageCaption">Mouse model bottom and top pieces we created</p>
       </div>
     </div> 
