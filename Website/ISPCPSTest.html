@@ -19,12 +19,13 @@
 
       .title {
 	  font-size: 50px;
+	  text-align: center;
       }
 
       .button {
 	  align-self: center;
 	  font-size: 50px;
-	  margin-left: 20%;   margin-right: 20%;
+	  margin-left: 20%;   margin-right: 20%; margin-top: 5%;
 	  width: 60%;
 	  height: 400px;
       }
@@ -59,7 +60,7 @@
 	  padding: 20px;
 	  border: 1px solid #888;
 	  width: 80%;
-	  height: 15%;
+	  height: 20%;
       }
 
       /* The Close Button */
@@ -75,10 +76,23 @@
 	  text-decoration: none;
 	  cursor: pointer;
       }
+   
+      .blink_me {
+         animation: blinker 1s linear infinite;
+         color: red;
+	 font-size: 20px;
+	 display: none;
+      }
+
+      @keyframes blinker {
+	  50% {
+	      opacity: 0;
+	  }
+      }
     </style>
   </head>
   <body>
-
+    <!--  Currently removed because website is blocked on school wifi
     <div class="container">
       <h2 class="title">Clicks Per Second Test</h2>
       <iframe class="CPSiframe" src="https://cpstest.org/" title="test"></iframe>
@@ -86,9 +100,12 @@
     <br>
     <br>
     <br>
+    -->
     <script>
       let seconds = 0;
       let clicks = 0;
+      let currCPS = 0;
+      let maxCPS = 0;
       let timerInterval;
       
       function startTest(){
@@ -103,16 +120,26 @@
 	  document.getElementById('timeDisplay').innerHTML = 'Time: ' + (seconds / 100);
 	  if(seconds === 500){
 	      clearInterval(timerInterval);
-	      document.getElementById('finalCPS').innerHTML = 'CPS: ' + (clicks / (seconds / 100));
-	      document.getElementById('modal-text').innerHTML = 'CPS: ' + (clicks / (seconds / 100));
+	      
+	      currCPS = (clicks / 5);
+	      
+	      if(currCPS > maxCPS){
+		  maxCPS = currCPS;	     
+		  document.getElementById('blinkText').style.display = 'block';
+	      }
+	      
+	      document.getElementById('modal-text').innerHTML = 'CPS: ' + currCPS;
+	      document.getElementById('modal-text2').innerHTML = 'High Score: ' + maxCPS + ' CPS';
+	      document.getElementById('finalCPS').innerHTML = 'CPS: ' + currCPS;
 	      resetTest();
-	      showModal();
+	      showModal();	      
 	  }
       }
 
       function resetTest(){
 	  seconds = 0;
 	  clicks = 0;
+	  currCPS = 0;
 	  document.getElementById('clickButton').innerHTML = 'Click';
 	  document.getElementById('startButton').style.display = 'block';
 	  document.getElementById('clickButton').hidden = true;
@@ -126,10 +153,13 @@
 
       // When the user clicks on <span> (x), close the modal
       function closeModal() {
+	  document.getElementById('blinkText').style.display = "none";
 	  document.getElementById('myModal').style.display = "none";
       }
 
     </script>
+
+    <h2 class="title">Clicks Per Second Test</h2>
     
     <button class="button" id="startButton" type="button"
 	    onclick="startTest();">
@@ -154,6 +184,8 @@
       <div class="modal-content">
 	<span class="close" onclick="closeModal();">&times;</span>
 	<p id="modal-text" style="color:black;"></p>
+	<p id="modal-text2" style="color:black;"></p>
+	<div id='blinkText' class='blink_me'>New Record!</div></p>
       </div>
 
     </div>
